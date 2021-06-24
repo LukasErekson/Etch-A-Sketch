@@ -1,0 +1,14 @@
+#sketchpad-wrapper {
+    min-width: 200px;
+    min-height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sketchpad-square {
+    border: 1px solid black;
+    background-color: #ccc;
+}
