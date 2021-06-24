@@ -28,11 +28,11 @@ function drawSketchpad(rowLength=16){
     }
 
     for (let i = 0; i < rowLength**2; i++) {
-      let padSquare = document.getElementById(i);
+      let padSquare = document.getElementById(`square-${i}`);
       if (padSquare === null) {
         padSquare = document.createElement('div');
         padSquare.classList.add('sketchpad-square');
-        padSquare.setAttribute('id', `${i}`);
+        padSquare.setAttribute('id', `square-${i}`);
         sketchpad.appendChild(padSquare);
       }
 
