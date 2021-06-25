@@ -1,12 +1,26 @@
-#sketchpad-wrapper {
-    margin: auto;
+body {
+    font-family: calibri, helvetica;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  #sketchpad-options {
+    margin: 5px;
     padding: 5px;
-    width: 600px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.sketchpad-square {
-    /* border: 1px solid black; */
-    /* background-color: #ccc; */
-}
+  }
+  
+  button {
+  /*   border: 0px; */
+    border-radius: 5px;
+  }
+  
+  #sketchpad-wrapper {
+      margin: auto;
+      width: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      border: 25px outset red;
+  }

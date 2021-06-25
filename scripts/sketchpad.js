@@ -57,3 +57,30 @@ function drawOnSketchpad(event) {
 
     targetedSquare.style.backgroundColor = `rgb(${currentColor[0] - 20}, ${currentColor[1] - 20}, ${currentColor[2] - 20})`;
 }
+
+/**
+ * Reset the sketchpad to match its original color.
+*/
+function clearSketchpad() {
+  for (let i = 0; i < sketchpad.children.length; i++) {
+    sketchpad.children[i].style.backgroundColor = 'rgb(204, 204, 204)';
+  }
+}
+
+clearButton = document.getElementById('clear-button');
+clearButton.addEventListener('click', clearSketchpad);
+
+/**
+ * Change the resolution of the sketchpad using the slider.
+*/
+function changeResolution() {
+  let resolution = +resolutionSlider.value;
+  drawSketchpad(resolution);
+  resolutionSliderLabel.innerText = `Resolution: (${resolution} x ${resolution})`;
+}
+
+resolutionSliderLabel = document.getElementById('resolution-label');
+resolutionSlider = document.getElementById('resolution');
+resolutionSlider.value = "16";
+resolutionSlider.addEventListener('input', changeResolution);
+
