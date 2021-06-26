@@ -33,7 +33,7 @@ drawSketchpad();
  */
 function drawSketchpad(rowLength=DEFAULTROWLENGTH){
 
-    let squareSize = SKETCHPADWIDTH / rowLength;
+    let squareSize = rowLength / 100;
   
     let gridCols = "";
     for (let i=0; i < rowLength; i++) {
@@ -62,7 +62,7 @@ function drawSketchpad(rowLength=DEFAULTROWLENGTH){
         sketchpad.appendChild(padSquare);
       }
       
-      padSquare.setAttribute('style', `min-width:${squareSize}px; min-height:${squareSize}px; grid-area: ${i % rowLength + 1}`);
+      padSquare.setAttribute('style', `min-width:${squareSize}%; min-height:${squareSize}%; grid-area: ${i % rowLength + 1}`);
       padSquare.style.backgroundColor = 'rgb(204, 204, 204)';
       padSquare.addEventListener('mouseover', drawFunction);
 

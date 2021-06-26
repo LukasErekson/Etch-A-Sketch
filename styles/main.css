@@ -19,6 +19,7 @@ button {
 #sketchpad-wrapper {
     margin: auto;
     width: 600px;
+    height: 600px;
     display: grid;
     grid-gap: 0px;
     align-content: stretch;
