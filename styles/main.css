@@ -1,26 +1,27 @@
 body {
-    font-family: calibri, helvetica;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 40px;
-  }
-  
-  #sketchpad-options {
-    margin: 5px;
-    padding: 5px;
-  }
-  
-  button {
-  /*   border: 0px; */
-    border-radius: 5px;
-  }
-  
-  #sketchpad-wrapper {
-      margin: auto;
-      width: 600px;
-      display: flex;
-      flex-wrap: wrap;
-      border: 25px outset red;
-  }
+  font-family: calibri, helvetica;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#sketchpad-options {
+  margin: 5px;
+  padding: 5px;
+}
+
+button {
+  border-radius: 5px;
+}
+
+#sketchpad-wrapper {
+    margin: auto;
+    width: 600px;
+    display: grid;
+    grid-gap: 0px;
+    align-content: stretch;
+    align-items: stretch;
+    border: 25px outset red;
+}
