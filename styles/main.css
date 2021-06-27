@@ -1,14 +1,30 @@
 body {
   font-family: calibri, helvetica;
   text-align: center;
+  background-color: azure;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 36px;
+  margin-bottom: -5px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #222;
+  text-decoration: none;
 }
 
 #sketchpad-options {
-  margin: 5px;
+  margin: 0px;
   padding: 5px;
 }
 
@@ -18,11 +34,11 @@ button {
 
 #sketchpad-wrapper {
     margin: auto;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     display: grid;
     grid-gap: 0px;
     align-content: stretch;
     align-items: stretch;
-    border: 25px outset red;
+    border: 25px outset rgb(219, 0, 0);
 }

@@ -1,7 +1,7 @@
 'using strict';
 
 // Create the sketch pad squares
-const SKETCHPADWIDTH = 600;
+const SKETCHPADWIDTH = 500;
 const DEFAULTROWLENGTH = 16;
 const sketchpad = document.getElementById('sketchpad-wrapper');
 
